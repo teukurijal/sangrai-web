@@ -1,12 +1,20 @@
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 import styles from '../styles/Home.module.css';
+import Maintenance from './maintenance';
+
+export const maintenanceStatus = true;
 
 export default function Home() {
+  if (maintenanceStatus) return <Maintenance />;
+  
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Kelapa Sangrai | Kelapa Gongseng</title>
+        <meta property='og:title' content='Kelapa Sangrai | Kelapa Gongseng' />
+        <meta property='og:description' content='Distributor Kelapa Gongseng Indonesia' />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <main>
