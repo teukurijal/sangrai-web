@@ -1,4 +1,5 @@
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import { Box } from "@mui/material";
 
 export default function WhatsAppButton() {
   return (
@@ -7,6 +8,7 @@ export default function WhatsAppButton() {
       href="https://wa.me/6285212272264"
       target="_blank"
     >
+      <Box>
       <WhatsAppIcon
         color="success"
         fontSize="large"
@@ -18,6 +20,7 @@ export default function WhatsAppButton() {
           bottom: "2vw",
         }}
       />
+      </Box>
     </a>
   );
 }
