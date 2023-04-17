@@ -11,7 +11,7 @@ export default function createMeta(props) {
       <meta name="author" content="Valutrades Limited" />
       <meta name="description" content={props.description} />
       <title>{props.title}</title>
-      <link rel="shortcut icon" href="/favicon.png" />
+      <link rel="shortcut icon" href="/logo-karan.png" />
 
       <meta property="og:description" content={props.description} />
       <meta property="og:title" content={props.description} />
